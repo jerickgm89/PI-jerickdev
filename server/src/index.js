@@ -1,7 +1,7 @@
 const server = require("./server.js");
 const { conn } = require('./db.js');
 const fs = require('fs').promises;
-const Country = require('./models/Country.js')(conn);
+const Country = require('./models/Country.js');
 
 const PORT = process.env.PORT || 5000;
 
